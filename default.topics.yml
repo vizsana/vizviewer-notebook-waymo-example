@@ -1,0 +1,136 @@
+image1:
+  propTopics:
+  - type: sensor_msgs/Image
+    name: camera/color/front
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front/labels/vehicle
+    color: yellow
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front/labels/pedestrian
+    color: mediumblue
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front/labels/cyclist
+    color: orange
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front/labels/sign
+    color: purple
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front/labels/unknown
+    color: teal
+
+image2:
+  propTopics:
+  - type: sensor_msgs/Image
+    name: camera/color/front_left
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_left/labels/vehicle
+    color: yellow
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_left/labels/pedestrian
+    color: mediumblue
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_left/labels/cyclist
+    color: orange
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_left/labels/sign
+    color: purple
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_left/labels/unknown
+    color: teal
+
+image3:
+  propTopics:
+  - type: sensor_msgs/Image
+    name: camera/color/front_right
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_right/labels/vehicle
+    color: yellow
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_right/labels/pedestrian
+    color: mediumblue
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_right/labels/cyclist
+    color: orange
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_right/labels/sign
+    color: purple
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/front_right/labels/unknown
+    color: teal
+
+image4:
+  propTopics:
+  - type: sensor_msgs/Image
+    name: camera/color/side_left
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_left/labels/vehicle
+    color: yellow
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_left/labels/pedestrian
+    color: mediumblue
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_left/labels/cyclist
+    color: orange
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_left/labels/sign
+    color: purple
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_left/labels/unknown
+    color: teal
+
+image5:
+  propTopics:
+  - type: sensor_msgs/Image
+    name: camera/color/side_right
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_right/labels/vehicle
+    color: yellow
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_right/labels/pedestrian
+    color: mediumblue
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_right/labels/cyclist
+    color: orange
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_right/labels/sign
+    color: purple
+  - type: bag_edit_tools/BoundingBox2DArray
+    name: camera/color/side_right/labels/unknown
+    color: teal
+
+lidar3d:
+  propTopics:
+  - type: sensor_msgs/PointCloud
+    name: lidar/pointcloud/combined
+  - type: bag_edit_tools/BoundingBoxArray
+    name: lidar/labels/vehicle    
+  - type: bag_edit_tools/BoundingBoxArray
+    name: lidar/labels/pedestrian    
+  - type: bag_edit_tools/BoundingBoxArray
+    name: lidar/labels/sign    
+  - type: bag_edit_tools/BoundingBoxArray
+    name: lidar/labels/cyclist    
+  - type: bag_edit_tools/BoundingBoxArray
+    name: lidar/labels/unknown
+  options:
+    topicsParams:
+      lidar/labels/vehicle:
+        color: "0x4fffff00"
+        showOrientation: true
+        autoClear: true                    
+      lidar/labels/pedestrian: 
+        color: "0x4f0000ff"
+        showOrientation: true
+        autoClear: true
+      lidar/labels/cyclist:
+        color: "0x4fff400f"
+        showOrientation: true
+        autoClear: true
+      lidar/labels/sign:
+        color: "0x4fff00ff"
+        showOrientation: true
+        autoClear: true
+      lidar/labels/unknown:
+        color: "0x4f00ffff"
+        showOrientation: true
+        autoClear: true

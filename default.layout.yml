@@ -1,0 +1,82 @@
+components:
+- type: image
+  id: image1
+  title: Front View
+  props:
+    options:      
+      label: Front Camera
+- type: image
+  id: image2
+  title: Front Left View
+  props:
+    options:      
+      label: Front Left Camera
+- type: image
+  id: image3
+  title: Front Right View
+  props:
+    options:      
+      label: Front Right Camera
+- type: image
+  id: image4
+  title: Side Left View
+  props:
+    options:      
+      label: Side Left Camera
+- type: image
+  id: image5
+  title: Side Right View
+  props:
+    options:      
+      label: Side Right Camera
+- type: ros3d
+  title: Lidar View
+  id: lidar3d
+  props:
+    options: {}      
+layouts:  
+  image_column:
+    type: split_tree
+    title: Image Column
+    label: image_column
+    visible: true
+    action_icon: remove
+    options:
+      edit: false
+      splits:
+        dir: vertical
+        split: 50%
+        first:
+          dir: horizontal
+          split: 33.3%  
+          first: image2
+          second: 
+            first: image1
+            second: image3
+            split: 50%                  
+        second: 
+          dir: horizontal
+          first: image4
+          second: image5
+          split: 50%                  
+  lidar_view:
+    type: split_tree
+    title: Lidar with Images
+    label: lidar_view
+    visible: true
+    action_icon: remove
+    options:
+      edit: false
+      splits:
+        dir: vertical
+        split: 50%
+        first: lidar3d
+        second:                    
+          dir: horizontal
+          split: 33.3%  
+          first: image2
+          second: 
+            first: image1
+            second: image3
+            split: 50%
+  
