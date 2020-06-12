@@ -1,0 +1,1 @@
+CAROOT=/mkcert_data /usr/local/bin/mkcert -cert-file /mkcert_data/localhost.pem -key-file /mkcert_data/localhost-key.pem localhost
