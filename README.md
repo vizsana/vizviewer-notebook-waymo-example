@@ -10,17 +10,21 @@
 
 1. Within your working directory, clone the github repository.
 
-`git clone git@github.com:vizsana/vizviewer-notebook-waymo-example.git`
+`git clone https://github.com/vizsana/vizviewer-notebook-waymo-example.git`
 
 2. Login into the docker registry. Replace PASSWORD with the registry password.
 
-`docker login --username vizviewer-notebook-user --password PASSWORD`
+`docker login registry.gitlab.com --username vizviewer-notebook-user --password PASSWORD`
 
-3. Change directories
+3. Pull the Docker Image
+
+`docker pull registry.gitlab.com/vizsana/vizviewer_notebook`
+
+4. Change directories
 
 `cd vizviewer-notebook-waymo-example`
 
-4. Create and install the local CA Root certificates to your machine. These certificates are unique to each machine and are never shared.
+5. Create and install the local CA Root certificates to your machine. These certificates are unique to each machine and are never shared.
 
 `./docker_mkcert.sh`
 
