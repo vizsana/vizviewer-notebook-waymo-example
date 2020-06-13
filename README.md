@@ -1,9 +1,9 @@
-* Prerequisites
+## Prerequisites
 
 - Docker installation
 - Google Chrome
 
-* How to Install
+## How to Install
 
 1. Within your working directory, clone the github repository.
 
@@ -21,7 +21,7 @@
 
 `./docker_mkcert.sh`
 
-* Running the notebook example
+## Running the notebook example
 
 1. Launch the notebook container via Docker
 
