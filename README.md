@@ -1,3 +1,6 @@
+## Preview 
+![Preview Image](https://imgur.com/a/Rcg1wpk)
+
 ## Prerequisites
 
 - Docker installation
