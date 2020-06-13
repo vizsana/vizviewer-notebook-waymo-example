@@ -1,5 +1,5 @@
 ## Preview 
-![Preview Image](https://imgur.com/a/Rcg1wpk)
+![Preview Image](https://i.imgur.com/2XzhU39.jpg)
 
 ## Prerequisites
 
